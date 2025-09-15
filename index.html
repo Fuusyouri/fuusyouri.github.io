@@ -14,26 +14,26 @@
             --light: #f4f4f4;
             --gray: #888;
         }
-        
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-        
+
         body {
             background-color: var(--dark);
             color: var(--light);
             line-height: 1.6;
         }
-        
+
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
         }
-        
+
         header {
             background-color: rgba(18, 18, 18, 0.95);
             position: fixed;
@@ -43,39 +43,39 @@
             padding: 15px 0;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
         }
-        
+
         nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
-        
+
         .logo {
             font-size: 1.8rem;
             font-weight: 700;
             color: var(--primary);
         }
-        
+
         .nav-links {
             display: flex;
             list-style: none;
         }
-        
+
         .nav-links li {
             margin-left: 30px;
         }
-        
+
         .nav-links a {
             color: var(--light);
             text-decoration: none;
             font-weight: 500;
             transition: color 0.3s;
         }
-        
+
         .nav-links a:hover {
             color: var(--primary);
         }
-        
+
         .hero {
             height: 100vh;
             display: flex;
@@ -83,11 +83,11 @@
             padding-top: 80px;
             background: linear-gradient(to bottom, var(--dark), var(--dark-light));
         }
-        
+
         .hero-content {
             max-width: 800px;
         }
-        
+
         .hero h1 {
             font-size: 3.5rem;
             margin-bottom: 20px;
@@ -95,19 +95,19 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-        
+
         .hero h2 {
             font-size: 1.8rem;
             margin-bottom: 30px;
             color: var(--gray);
         }
-        
+
         .hero p {
             font-size: 1.2rem;
             margin-bottom: 40px;
             max-width: 600px;
         }
-        
+
         .btn {
             display: inline-block;
             padding: 12px 30px;
@@ -119,23 +119,23 @@
             transition: all 0.3s;
             border: 2px solid var(--primary);
         }
-        
+
         .btn:hover {
             background-color: transparent;
             color: var(--primary);
         }
-        
+
         section {
             padding: 100px 0;
         }
-        
+
         .section-title {
             text-align: center;
             margin-bottom: 60px;
             font-size: 2.5rem;
             position: relative;
         }
-        
+
         .section-title::after {
             content: '';
             position: absolute;
@@ -146,88 +146,88 @@
             height: 4px;
             background: linear-gradient(45deg, var(--primary), var(--secondary));
         }
-        
+
         .about-content {
             gap: 50px;
             align-items: center;
         }
-        
+
         .about-content h3 {
             font-size: 1.8rem;
             margin-bottom: 20px;
             color: var(--primary);
         }
-        
+
         .about-content p {
             margin-bottom: 20px;
             font-size: 1.1rem;
         }
-        
+
         .info-list {
             list-style: none;
         }
-        
+
         .info-list li {
             margin-bottom: 10px;
             display: flex;
             align-items: center;
         }
-        
+
         .info-list li strong {
             min-width: 100px;
             color: var(--primary);
         }
-        
+
         .skills {
             background-color: var(--dark-light);
         }
-        
+
         .skills-container {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
             gap: 30px;
         }
-        
+
         .skill-category {
             background-color: rgba(255, 255, 255, 0.05);
             padding: 25px;
             border-radius: 10px;
             transition: transform 0.3s;
         }
-        
+
         .skill-category:hover {
             transform: translateY(-5px);
         }
-        
+
         .skill-category h3 {
             color: var(--primary);
             margin-bottom: 20px;
             font-size: 1.5rem;
         }
-        
+
         .skill-item {
             margin-bottom: 15px;
         }
-        
+
         .skill-name {
             display: flex;
             justify-content: space-between;
             margin-bottom: 5px;
         }
-        
+
         .skill-bar {
             height: 8px;
             background-color: rgba(255, 255, 255, 0.1);
             border-radius: 4px;
             overflow: hidden;
         }
-        
+
         .skill-progress {
             height: 100%;
             background: linear-gradient(45deg, var(--primary), var(--secondary));
             border-radius: 4px;
         }
-        
+
         /* 项目部分样式 */
         .projects-filter {
             display: flex;
@@ -235,7 +235,7 @@
             flex-wrap: wrap;
             margin-bottom: 40px;
         }
-        
+
         .filter-btn {
             padding: 8px 20px;
             margin: 5px;
@@ -246,66 +246,66 @@
             cursor: pointer;
             transition: all 0.3s;
         }
-        
+
         .filter-btn.active, .filter-btn:hover {
             background-color: var(--primary);
             border-color: var(--primary);
         }
-        
+
         .projects-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
             gap: 30px;
         }
-        
+
         .project-card {
             background-color: rgba(255, 255, 255, 0.05);
             border-radius: 10px;
             overflow: hidden;
             transition: transform 0.3s;
         }
-        
+
         .project-card:hover {
             transform: translateY(-10px);
         }
-        
+
         .project-img {
             height: 200px;
             overflow: hidden;
         }
-        
+
         .project-img img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             transition: transform 0.5s;
         }
-        
+
         .project-card:hover .project-img img {
             transform: scale(1.1);
         }
-        
+
         .project-info {
             padding: 20px;
         }
-        
+
         .project-info h3 {
             font-size: 1.4rem;
             margin-bottom: 10px;
             color: var(--primary);
         }
-        
+
         .project-info p {
             margin-bottom: 15px;
             color: var(--gray);
         }
-        
+
         .project-tags {
             display: flex;
             flex-wrap: wrap;
             margin-bottom: 15px;
         }
-        
+
         .project-tag {
             padding: 5px 10px;
             background-color: rgba(42, 133, 232, 0.2);
@@ -315,27 +315,27 @@
             margin-right: 8px;
             margin-bottom: 8px;
         }
-        
+
         /* 联系部分样式 */
         .contact {
             background-color: var(--dark-light);
         }
-        
+
         .contact-container {
             gap: 50px;
         }
-        
+
         .contact-info {
             display: flex;
             flex-direction: column;
         }
-        
+
         .contact-item {
             display: flex;
             align-items: center;
             margin-bottom: 25px;
         }
-        
+
         .contact-icon {
             width: 50px;
             height: 50px;
@@ -347,22 +347,22 @@
             margin-right: 15px;
             font-size: 1.2rem;
         }
-        
+
         .contact-text h3 {
             font-size: 1.2rem;
             margin-bottom: 5px;
         }
-        
+
         .contact-text a {
             color: var(--light);
             text-decoration: none;
             transition: color 0.3s;
         }
-        
+
         .contact-text a:hover {
             color: var(--primary);
         }
-        
+
         .social-link {
             width: 40px;
             height: 40px;
@@ -374,32 +374,32 @@
             margin-right: 15px;
             transition: all 0.3s;
         }
-        
+
         .social-link:hover {
             background-color: var(--primary);
             transform: translateY(-3px);
         }
-        
+
         /* 响应式设计 */
         @media (max-width: 992px) {
             .hero h1 {
                 font-size: 2.8rem;
             }
-            
+
             .hero h2 {
                 font-size: 1.5rem;
             }
         }
-        
+
         @media (max-width: 768px) {
             .nav-links {
                 display: none;
             }
-            
+
             .projects-grid {
                 grid-template-columns: 1fr;
             }
-            
+
             .section-title {
                 font-size: 2rem;
             }
@@ -407,363 +407,381 @@
     </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <nav>
-                <div class="logo">syou ri</div>
-                <ul class="nav-links">
-                    <li><a href="#home">首页</a></li>
-                    <li><a href="#about">关于我</a></li>
-                    <li><a href="#skills">技能</a></li>
-                    <li><a href="#projects">项目</a></li>
-                    <li><a href="#contact">联系我</a></li>
-                </ul>
-            </nav>
+<header>
+    <div class="container">
+        <nav>
+            <div class="logo">syou ri</div>
+            <ul class="nav-links">
+                <li><a href="#home">首页</a></li>
+                <li><a href="#about">关于我</a></li>
+                <li><a href="#skills">技能</a></li>
+                <li><a href="#projects">项目</a></li>
+                <li><a href="#contact">联系我</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="hero" id="home">
+    <div class="container">
+        <div class="hero-content">
+            <h1>SYOURI</h1>
+            <h2>软件开发 / 游戏开发工程师</h2>
+            <p>南京航空航天大学金城学院 2026届软件工程专业毕业生，专注于C/C++与Java开发，对软件开发、游戏开发、计算机图形学有浓厚兴趣。</p>
+            <a href="#projects" class="btn">查看我的项目</a>
         </div>
-    </header>
+    </div>
+</section>
 
-    <section class="hero" id="home">
-        <div class="container">
-            <div class="hero-content">
-                <h1>SYOURI</h1>
-                <h2>软件开发 / 游戏开发工程师</h2>
-                <p>南京航空航天大学金城学院 2026届软件工程专业毕业生，专注于C/C++与Java开发，对软件开发、游戏开发、计算机图形学有浓厚兴趣。</p>
-                <a href="#projects" class="btn">查看我的项目</a>
-            </div>
+<section class="about" id="about">
+    <div class="container">
+        <h2 class="section-title">关于我</h2>
+        <div class="about-content">
+            <h3>追求代码优雅与性能极致的开发者</h3>
+            <p>我是一名软件工程专业的应届毕业生，主攻C/C++和Java开发，对软件开发、游戏开发、计算机图形学有浓厚兴趣。在校期间，我不仅保持了良好的学业成绩，还通过多个个人项目不断提升自己的技术水平。</p>
+            <p>我热爱解决复杂技术问题，享受从概念设计到最终实现的整个过程。无论是开发桌面应用、游戏模组还是微信小程序，我都致力于编写清晰、高效且可维护的代码。</p>
+            <ul class="info-list">
+                <li><strong>学历</strong> 南京航空航天大学金城学院 本科</li>
+                <li><strong>专业</strong> 软件工程 (嵌入式培养)</li>
+                <li><strong>毕业时间</strong> 2026年6月</li>
+                <li><strong>GPA</strong> 3.04/5.0</li>
+                <li><strong>邮箱</strong> 842184015@qq.com</li>
+                <li><strong>电话</strong> 177-7878-2529</li>
+            </ul>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section class="about" id="about">
-        <div class="container">
-            <h2 class="section-title">关于我</h2>
-            <div class="about-content">
-                <h3>追求代码优雅与性能极致的开发者</h3>
-                <p>我是一名软件工程专业的应届毕业生，主攻C/C++和Java开发，对软件开发、游戏开发、计算机图形学有浓厚兴趣。在校期间，我不仅保持了良好的学业成绩，还通过多个个人项目不断提升自己的技术水平。</p>
-                <p>我热爱解决复杂技术问题，享受从概念设计到最终实现的整个过程。无论是开发桌面应用、游戏模组还是微信小程序，我都致力于编写清晰、高效且可维护的代码。</p>
-                <ul class="info-list">
-                    <li><strong>学历</strong> 南京航空航天大学金城学院 本科</li>
-                    <li><strong>专业</strong> 软件工程 (嵌入式培养)</li>
-                    <li><strong>毕业时间</strong> 2026年6月</li>
-                    <li><strong>GPA</strong> 3.04/5.0</li>
-                    <li><strong>邮箱</strong> 842184015@qq.com</li>
-                    <li><strong>电话</strong> 177-7878-2529</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section class="skills" id="skills">
-        <div class="container">
-            <h2 class="section-title">技术技能</h2>
-            <div class="skills-container">
-                <div class="skill-category">
-                    <h3>编程语言</h3>
-                    <div class="skill-item">
-                        <div class="skill-name">
-                            <span>C/C++</span>
-                            <span>95%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 95%;"></div>
-                        </div>
+<section class="skills" id="skills">
+    <div class="container">
+        <h2 class="section-title">技术技能</h2>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3>编程语言</h3>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>C/C++</span>
+                        <span>95%</span>
                     </div>
-                    <div class="skill-item">
-                        <div class="skill-name">
-                            <span>Java</span>
-                            <span>90%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 90%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-name">
-                            <span>Python</span>
-                            <span>80%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 80%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-name">
-                            <span>HTML/CSS/JS</span>
-                            <span>85%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 85%;"></div>
-                        </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 95%;"></div>
                     </div>
                 </div>
-                
-                <div class="skill-category">
-                    <h3>游戏开发</h3>
-                    <div class="skill-item">
-                        <div class="skill-name">
-                            <span>Unreal Engine</span>
-                            <span>80%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 80%;"></div>
-                        </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>Java</span>
+                        <span>90%</span>
                     </div>
-                    <div class="skill-item">
-                        <div class="skill-name">
-                            <span>DirectX (D2D/D3D)</span>
-                            <span>85%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 85%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-name">
-                            <span>游戏逆向</span>
-                            <span>75%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 75%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-name">
-                            <span>Minecraft Mod开发</span>
-                            <span>90%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 90%;"></div>
-                        </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 90%;"></div>
                     </div>
                 </div>
-                
-                <div class="skill-category">
-                    <h3>框架与工具</h3>
-                    <div class="skill-item">
-                        <div class="skill-name">
-                            <span>Qt框架</span>
-                            <span>90%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 90%;"></div>
-                        </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>Python</span>
+                        <span>80%</span>
                     </div>
-                    <div class="skill-item">
-                        <div class="skill-name">
-                            <span>Imgui</span>
-                            <span>85%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 85%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-name">
-                            <span>Visual Studio</span>
-                            <span>95%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 95%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-name">
-                            <span>Visual Studio Code</span>
-                            <span>90%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 90%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-name">
-                            <span>IDEA</span>
-                            <span>95%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 95%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-name">
-                            <span>Android Studio</span>
-                            <span>80%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 80%;"></div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="projects" id="projects">
-        <div class="container">
-            <h2 class="section-title">项目经验</h2>
-            <div class="projects-filter">
-                <button class="filter-btn active" data-filter="all">全部</button>
-                <button class="filter-btn" data-filter="cplusplus">C/C++</button>
-                <button class="filter-btn" data-filter="java">Java</button>
-                <button class="filter-btn" data-filter="game">游戏开发</button>
-                <button class="filter-btn" data-filter="web">Web</button>
-            </div>
-            <div class="projects-grid">
-                <div class="project-card" data-category="game,java">
-                    <div class="project-img">
-                        <div style="background-color: #6cc644; height: 100%; display: flex; justify-content: center; align-items: center; color: white;">
-                            <i class="fas fa-cube" style="font-size: 3rem;"></i>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Minecraft Fabric MOD 乌托邦</h3>
-                        <p>开发了一个泰拉瑞亚拓展Mod，将泰拉瑞亚里的部分物品移植到我的世界中，另外添加了有趣的果实能力，丰富了原版游戏的玩法与体验。</p>
-                        <div class="project-tags">
-                            <span class="project-tag">Java</span>
-                            <span class="project-tag">Minecraft Fabric</span>
-                            <span class="project-tag">游戏设计</span>
-                        </div>
-                        <a href="#" class="btn">查看详情</a>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 80%;"></div>
                     </div>
                 </div>
-                
-                <div class="project-card" data-category="java,web">
-                    <div class="project-img">
-                        <div style="background-color: #07c160; height: 100%; display: flex; justify-content: center; align-items: center; color: white;">
-                            <i class="fab fa-weixin" style="font-size: 3rem;"></i>
-                        </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>HTML/CSS/JS</span>
+                        <span>85%</span>
                     </div>
-                    <div class="project-info">
-                        <h3>微信小程序"简书"</h3>
-                        <p>一个模仿社区类微信小程序，支持文章发布、浏览、评论和点赞功能。</p>
-                        <div class="project-tags">
-                            <span class="project-tag">Java</span>
-                            <span class="project-tag">微信小程序</span>
-                            <span class="project-tag">JavaScript</span>
-                        </div>
-                        <a href="#" class="btn">查看详情</a>
-                    </div>
-                </div>
-         
-                <div class="project-card" data-category="cplusplus,game">
-                    <div class="project-img">
-                        <div style="background-color: #2a85e8; height: 100%; display: flex; justify-content: center; align-items: center; color: white;">
-                            <i class="fas fa-desktop" style="font-size: 3rem;"></i>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Qt与GUI工具开发</h3>
-                        <p>开发了一个集成了多种图形绘制功能的桌面应用工具，用于学习和演示GUI与图形API的交互及Qt自定义组件。</p>
-                        <div class="project-tags">
-                            <span class="project-tag">C++</span>
-                            <span class="project-tag">Qt</span>
-                            <span class="project-tag">DirectX</span>
-                            <span class="project-tag">D2D</span>
-                            <span class="project-tag">D3D</span>
-                            <span class="project-tag">ImGui</span>
-                            <span class="project-tag">自定义组件</span>
-                        </div>
-                        <a href="#" class="btn">查看详情</a>
-                    </div>
-                </div>
-                
-                <div class="project-card" data-category="cplusplus,game">
-                    <div class="project-img">
-                        <div style="background-color: #7e57c2; height: 100%; display: flex; justify-content: center; align-items: center; color: white;">
-                            <i class="fas fa-search" style="font-size: 3rem;"></i>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Unreal Engine 逆向分析</h3>
-                        <p>通过逆向分析UE引擎生成的游戏程序，学习其内存结构、对象创建和管理机制。</p>
-                        <div class="project-tags">
-                            <span class="project-tag">C++</span>
-                            <span class="project-tag">Unreal Engine</span>
-                            <span class="project-tag">逆向工程</span>
-                        </div>
-                        <a href="#" class="btn">查看详情</a>
-                    </div>
-                </div>
-                
-                <div class="project-card" data-category="java">
-                    <div class="project-img">
-                        <div style="background-color: #ff6b6b; height: 100%; display: flex; justify-content: center; align-items: center; color: white;">
-                            <i class="fab fa-android" style="font-size: 3rem;"></i>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Android应用"乌托邦"</h3>
-                        <p>一个用于学习Android开发技术的半成品应用，包含了多个基础功能模块。</p>
-                        <div class="project-tags">
-                            <span class="project-tag">Java</span>
-                            <span class="project-tag">Android</span>
-                            <span class="project-tag">移动开发</span>
-                        </div>
-                        <a href="#" class="btn">查看详情</a>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 85%;"></div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <section class="contact" id="contact">
-        <div class="container">
-            <h2 class="section-title">联系我</h2>
-            <div class="contact-container">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="contact-text">
-                            <h3>邮箱</h3>
-                            <a href="mailto:842184015@qq.com">842184015@eqq.com</a>
-                        </div>
+            <div class="skill-category">
+                <h3>游戏开发</h3>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>Unreal Engine</span>
+                        <span>80%</span>
                     </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div class="contact-text">
-                            <h3>电话</h3>
-                            <a href="tel:17778782529">177-7878-2529</a>
-                        </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>DirectX (D2D/D3D)</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 85%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>游戏逆向</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 75%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>Minecraft Mod开发</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 90%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>框架与工具</h3>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>Qt框架</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>Imgui</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 85%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>Visual Studio</span>
+                        <span>95%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 95%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>Visual Studio Code</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>IDEA</span>
+                        <span>95%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 95%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>Android Studio</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 80%;"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="projects" id="projects">
+    <div class="container">
+        <h2 class="section-title">项目经验</h2>
+        <div class="projects-filter">
+            <button class="filter-btn active" data-filter="all">全部</button>
+            <button class="filter-btn" data-filter="cplusplus">C/C++</button>
+            <button class="filter-btn" data-filter="java">Java</button>
+            <button class="filter-btn" data-filter="game">游戏开发</button>
+            <button class="filter-btn" data-filter="web">Web</button>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card" data-category="game,java">
+                <div class="project-img">
+                    <div style="background-color: #6cc644; height: 100%; display: flex; justify-content: center; align-items: center; color: white;">
+                        <i class="fas fa-cube" style="font-size: 3rem;"></i>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Fabric1.20.1 奇幻冒险</h3>
+                    <p>开发了一个泰拉瑞亚拓展Mod，将泰拉瑞亚里的部分物品移植到我的世界中，另外添加了有趣的果实能力，丰富了原版游戏的玩法与体验。</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Java</span>
+                        <span class="project-tag">Minecraft Fabric</span>
+                        <span class="project-tag">游戏设计</span>
+                    </div>
+                    <a href="https://gitee.com/syourifuu/fabric1.20.1" class="btn">查看详情</a>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="java,web">
+                <div class="project-img">
+                    <div style="background-color: #07c160; height: 100%; display: flex; justify-content: center; align-items: center; color: white;">
+                        <i class="fab fa-weixin" style="font-size: 3rem;"></i>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>微信小程序"简书"</h3>
+                    <p>一个模仿社区类微信小程序，支持文章发布、浏览、评论和点赞功能。</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Java</span>
+                        <span class="project-tag">微信小程序</span>
+                        <span class="project-tag">JavaScript</span>
+                    </div>
+                    <a href="#" class="btn">查看详情</a>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="cplusplus,game">
+                <div class="project-img">
+                    <div style="background-color: #2a85e8; height: 100%; display: flex; justify-content: center; align-items: center; color: white;">
+                        <i class="fas fa-desktop" style="font-size: 3rem;"></i>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Qt与GUI工具开发</h3>
+                    <p>开发了一个集成了多种图形绘制功能的桌面应用工具，用于学习和演示GUI与图形API的交互及Qt自定义组件。</p>
+                    <div class="project-tags">
+                        <span class="project-tag">C++</span>
+                        <span class="project-tag">Qt</span>
+                        <span class="project-tag">DirectX</span>
+                        <span class="project-tag">D2D</span>
+                        <span class="project-tag">D3D</span>
+                        <span class="project-tag">ImGui</span>
+                        <span class="project-tag">自定义组件</span>
+                    </div>
+                    <a href="https://gitee.com/syourifuu/sss" class="btn">查看详情</a>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="cplusplus,game">
+                <div class="project-img">
+                    <div style="background-color: #7e57c2; height: 100%; display: flex; justify-content: center; align-items: center; color: white;">
+                        <i class="fas fa-search" style="font-size: 3rem;"></i>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Unreal Engine 逆向分析</h3>
+                    <p>通过逆向分析UE引擎生成的游戏程序，学习其内存结构、对象创建和管理机制。</p>
+                    <div class="project-tags">
+                        <span class="project-tag">C++</span>
+                        <span class="project-tag">Unreal Engine</span>
+                        <span class="project-tag">逆向工程</span>
+                    </div>
+                    <a href="#" class="btn">查看详情</a>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="java">
+                <div class="project-img">
+                    <div style="background-color: #ff6b6b; height: 100%; display: flex; justify-content: center; align-items: center; color: white;">
+                        <i class="fab fa-android" style="font-size: 3rem;"></i>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Android应用"乌托邦"</h3>
+                    <p>一个用于学习Android开发技术的半成品应用，包含了多个基础功能模块。</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Java</span>
+                        <span class="project-tag">Android</span>
+                        <span class="project-tag">移动开发</span>
+                    </div>
+                    <a href="#" class="btn">查看详情</a>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="web">
+                <div class="project-img">
+                    <div style="background-color: #ff2f2f; height: 100%; display: flex; justify-content: center; align-items: center; color: white;">
+                        <i class="fa fa-heartbeat" style="font-size: 3rem;"></i>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>小梨花</h3>
+                    <p>一个恋爱日记，但好像另一半很懒。</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Web</span>
+                    </div>
+                    <a href="https://fuusyouri.github.io/xiaolihua/" class="btn">查看详情</a>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <div class="container">
+        <h2 class="section-title">联系我</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h3>邮箱</h3>
+                        <a href="mailto:842184015@qq.com">842184015@eqq.com</a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h3>电话</h3>
+                        <a href="tel:17778782529">177-7878-2529</a>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <script>
-        // 简单的项目过滤功能
-        document.addEventListener('DOMContentLoaded', function() {
-            const filterButtons = document.querySelectorAll('.filter-btn');
-            const projectCards = document.querySelectorAll('.project-card');
-            
-            filterButtons.forEach(button => {
-                button.addEventListener('click', () => {
-                    // 移除所有按钮的active类
-                    filterButtons.forEach(btn => btn.classList.remove('active'));
-                    // 为当前点击的按钮添加active类
-                    button.classList.add('active');
-                    
-                    const filterValue = button.getAttribute('data-filter');
-                    
-                    projectCards.forEach(card => {
-                        if (filterValue === 'all') {
+<script>
+    // 简单的项目过滤功能
+    document.addEventListener('DOMContentLoaded', function() {
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const projectCards = document.querySelectorAll('.project-card');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // 移除所有按钮的active类
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                // 为当前点击的按钮添加active类
+                button.classList.add('active');
+
+                const filterValue = button.getAttribute('data-filter');
+
+                projectCards.forEach(card => {
+                    if (filterValue === 'all') {
+                        card.style.display = 'block';
+                    } else {
+                        const categories = card.getAttribute('data-category').split(',');
+                        if (categories.includes(filterValue)) {
                             card.style.display = 'block';
                         } else {
-                            const categories = card.getAttribute('data-category').split(',');
-                            if (categories.includes(filterValue)) {
-                                card.style.display = 'block';
-                            } else {
-                                card.style.display = 'none';
-                            }
+                            card.style.display = 'none';
                         }
-                    });
+                    }
                 });
             });
         });
-    </script>
+    });
+</script>
 </body>
 </html>
