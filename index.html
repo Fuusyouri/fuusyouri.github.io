@@ -33,8 +33,7 @@
             margin: 0 auto;
             padding: 0 20px;
         }
-        
-        /* 导航栏样式 */
+
         header {
             background-color: rgba(18, 18, 18, 0.95);
             position: fixed;
@@ -76,8 +75,7 @@
         .nav-links a:hover {
             color: var(--primary);
         }
-        
-        /* 英雄区域样式 */
+
         .hero {
             height: 100vh;
             display: flex;
@@ -126,8 +124,7 @@
             background-color: transparent;
             color: var(--primary);
         }
-        
-        /* 关于部分样式 */
+
         section {
             padding: 100px 0;
         }
@@ -151,19 +148,18 @@
         }
         
         .about-content {
-            display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 50px;
             align-items: center;
         }
         
-        .about-text h3 {
+        .about-content h3 {
             font-size: 1.8rem;
             margin-bottom: 20px;
             color: var(--primary);
         }
         
-        .about-text p {
+        .about-content p {
             margin-bottom: 20px;
             font-size: 1.1rem;
         }
@@ -182,8 +178,7 @@
             min-width: 100px;
             color: var(--primary);
         }
-        
-        /* 技能部分样式 */
+
         .skills {
             background-color: var(--dark-light);
         }
@@ -233,8 +228,7 @@
             background: linear-gradient(45deg, var(--primary), var(--secondary));
             border-radius: 4px;
         }
-        
-        /* 项目部分样式 */
+
         .projects-filter {
             display: flex;
             justify-content: center;
@@ -321,8 +315,7 @@
             margin-right: 8px;
             margin-bottom: 8px;
         }
-        
-        /* 联系部分样式 */
+
         .contact {
             background-color: var(--dark-light);
         }
@@ -392,8 +385,7 @@
             background-color: var(--primary);
             transform: translateY(-3px);
         }
-        
-        /* 响应式设计 */
+
         @media (max-width: 992px) {
             .about-content, .contact-container {
                 grid-template-columns: 1fr;
@@ -424,7 +416,6 @@
     </style>
 </head>
 <body>
-    <!-- 导航栏 -->
     <header>
         <div class="container">
             <nav>
@@ -440,7 +431,6 @@
         </div>
     </header>
 
-    <!-- 英雄区域 -->
     <section class="hero" id="home">
         <div class="container">
             <div class="hero-content">
@@ -452,29 +442,25 @@
         </div>
     </section>
 
-    <!-- 关于我 -->
     <section class="about" id="about">
         <div class="container">
             <h2 class="section-title">关于我</h2>
             <div class="about-content">
-                <div class="about-text">
-                    <h3>追求代码优雅与性能极致的开发者</h3>
-                    <p>我是一名软件工程专业的应届毕业生，主攻C/C++和Java开发，对软件开发、游戏开发、计算机图形学有浓厚兴趣。在校期间，我不仅保持了良好的学业成绩，还通过多个个人项目不断提升自己的技术水平。</p>
-                    <p>我热爱解决复杂技术问题，享受从概念设计到最终实现的整个过程。无论是开发桌面应用、游戏模组还是微信小程序，我都致力于编写清晰、高效且可维护的代码。</p>
-                    <ul class="info-list">
-                        <li><strong>学历</strong> 南京航空航天大学金城学院 本科</li>
-                        <li><strong>专业</strong> 软件工程 (嵌入式培养)</li>
-                        <li><strong>毕业时间</strong> 2026年6月</li>
-                        <li><strong>GPA</strong> 3.04/5.0</li>
-                        <li><strong>邮箱</strong> 842184015@qq.com</li>
-                        <li><strong>电话</strong> 177-7878-2529</li>
-                    </ul>
-                </div>
+                <h3>追求代码优雅与性能极致的开发者</h3>
+                <p>我是一名软件工程专业的应届毕业生，主攻C/C++和Java开发，对软件开发、游戏开发、计算机图形学有浓厚兴趣。在校期间，我不仅保持了良好的学业成绩，还通过多个个人项目不断提升自己的技术水平。</p>
+                <p>我热爱解决复杂技术问题，享受从概念设计到最终实现的整个过程。无论是开发桌面应用、游戏模组还是微信小程序，我都致力于编写清晰、高效且可维护的代码。</p>
+                <ul class="info-list">
+                    <li><strong>学历</strong> 南京航空航天大学金城学院 本科</li>
+                    <li><strong>专业</strong> 软件工程 (嵌入式培养)</li>
+                    <li><strong>毕业时间</strong> 2026年6月</li>
+                    <li><strong>GPA</strong> 3.04/5.0</li>
+                    <li><strong>邮箱</strong> 842184015@qq.com</li>
+                    <li><strong>电话</strong> 177-7878-2529</li>
+                </ul>
             </div>
         </div>
     </section>
 
-    <!-- 技能 -->
     <section class="skills" id="skills">
         <div class="container">
             <h2 class="section-title">技术技能</h2>
